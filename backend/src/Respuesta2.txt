@@ -1,0 +1,15 @@
+Considerando el modelo de la imagen 1, se puede implementar un proceso de automatización centrado en la actualización de precios. 
+Este proceso sería ejecutado cada vez que el proveedor suba los precios, para mantener la información de precios de los productos siempre actualizada.
+
+Se puede realizar de la siguiente manera: 
+ - Obtener nuevos costos: 
+    - Mediante una "conexion" con el sistema del proveedor obtendremos los nuevos valores. (Pude llevarse acabo con una posible plataforma del proveedor)
+
+ - Calcular los nuevos precios:
+    - Con la misma logica del negocio, se calculara los nuevos precios en funcion de los costos recien obtenidos, mas margenes de ganancia y descuentos.
+
+ - Actualizacion de Base de datos:
+    - Con una consulta de actualización a la DB se reflejaran los nuevos precios calculados 
+
+ - Registro de cambios:
+    - Se registrarian los productos afectados a la modificacion de su valor. 
